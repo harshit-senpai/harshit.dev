@@ -3,7 +3,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/data";
 
-import { MapPin } from "lucide-react";
+import { Github, LinkedinIcon, MapPin, Twitter } from "lucide-react";
 import { Share } from "lucide-react";
 import { Copy } from "lucide-react";
 
@@ -56,6 +56,19 @@ const Hero = () => {
             </div>
             <div className="w-1/5 flex items-center justify-center text-black h-10 bg-white rounded-md">
               <Copy className="h-5 w-5" />
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY}>
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2">
+              <LinkedinIcon className="w-5 h-5" />
+            </div>
+            <div className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2">
+              <Github className="w-5 h-5" />
+            </div>
+            <div className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2">
+              <Twitter className="w-5 h-5" />
             </div>
           </div>
         </BlurFade>
