@@ -3,7 +3,7 @@ export const DATA = {
   initials: "HM",
   location: "Chhattisgrah, India",
   description:
-    "Product Builder, Problem Solver, Full Stack Dev, Otaku, Gamer, and a Music Lover.",
+    "Product Builder, Problem Solver, Full Stack Dev, Otaku, Gamer, and a Music Lover. Connect with me on X.",
   summary:
     "I'm a product Builder and full stack developer currently based in Chhattisgarh, India. Pursuing my Undergrad in Computer Science, I'm passionate about building products, I'm also a big fan of open source softwares - That's why i buld everything in Public. I mainly write code in Typescript",
   skills: [
