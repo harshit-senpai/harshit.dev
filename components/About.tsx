@@ -16,7 +16,7 @@ const About = () => {
         <p className="prose max-w-full mt-1 text-pretty font-sans text-sm text-muted-foreground dark:prose-invert leading-7 mb-5">
           I&apos;m a product Builder and full stack developer currently based in
           Chhattisgarh, India. Pursuing my{" "}
-          <span className="relative underline decoration-wavy underline-offset-4 hover:underline text-white decoration-white">
+          <span className="relative underline decoration-wavy underline-offset-4 hover:underline dark:text-white dark:decoration-white decoration-black text-gray-900">
             Undergrad in Computer Science
           </span>
           , I&apos;m passionate about{" "}

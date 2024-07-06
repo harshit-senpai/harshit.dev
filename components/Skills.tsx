@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="flex flex-wrap gap-1.5">
           {DATA.skills.map((skill, i) => (
             <BlurFade key={i} delay={BLUR_FADE_DELAY * 10 + i * 0.05}>
-              <Badge>{skill}</Badge>
+              <Badge className="rounded-sm">{skill}</Badge>
             </BlurFade>
           ))}
         </div>

@@ -87,13 +87,13 @@ export function ProjectCard({
       <CardFooter className="px-2 mt-2 pb-3">
         <div className="flex flex-row flex-wrap items-start gap-1">
           <Link href={website} target="_blank">
-            <Badge className="flex gap-2 px-1 py-1 rounded-md text-[10px]">
+            <Badge className="flex gap-2 px-2 py-1 rounded-md text-[10px]">
               <GlobeIcon className="w-3" />
               <p className="font-semibold">Website</p>
             </Badge>
           </Link>
           <Link href={github} target="_blank">
-            <Badge className="flex gap-2 px-1 py-1 rounded-md text-[10px]">
+            <Badge className="flex gap-2 px-2 py-1 rounded-md text-[10px]">
               <Github className="w-3" />
               <p className="font-semibold">Github</p>
             </Badge>

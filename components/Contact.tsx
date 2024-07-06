@@ -21,7 +21,7 @@ export default function Contact() {
               Want to chat? Just shoot me a dm{" "}
               <LinkPreview
                 url={DATA.contact.social.X.url}
-                className="text-blue-500 relative underline decoration-wavy underline-offset-4 hover:underline"
+                className="dark:text-blue-500 text-blue-500 relative underline decoration-wavy underline-offset-4 hover:underline"
               >
                 with a direct question on X
               </LinkPreview>{" "}
