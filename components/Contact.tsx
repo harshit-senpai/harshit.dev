@@ -23,10 +23,8 @@ export default function Contact() {
                 url={DATA.contact.social.X.url}
                 className="text-blue-500 relative underline decoration-wavy underline-offset-4 hover:underline"
               >
-                with a direct question on twitter
+                with a direct question on X
               </LinkPreview>{" "}
-              and I&apos;ll respond whenever I can. I will ignore all
-              soliciting.
             </p>
           </div>
         </BlurFade>

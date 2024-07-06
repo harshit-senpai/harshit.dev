@@ -23,12 +23,15 @@ export const DATA = {
     social: {
       GitHub: {
         url: "https://github.com/harshit-senpai",
+        icon: Icons.github,
       },
       Linkedin: {
         url: "https://www.linkedin.com/in/harshit-senpai",
+        icon: Icons.linkedin,
       },
       X: {
         url: "https://www.x.com/Harshit_senpai",
+        icon: Icons.x,
       },
     },
   },
@@ -119,6 +122,16 @@ export const DATA = {
   ],
   work: [
     {
+      company: "Glyph",
+      href: "http://glyphhq.com",
+      location: "Remote",
+      title: "Co-founder & CTO",
+      logoUrl: "/assets/glyph.png",
+      start: "July 2024",
+      description:
+        "Building and leading a team of developers, to create an ultimate AI-powered resume builder, offering LaTeX quality without coding, instant shareable links with analytics, and custom AI agents to optimize every aspect of your job application",
+    },
+    {
       company: "Swaroop.ai",
       href: "https://swaroop.ai/",
       location: "Remote",
@@ -148,7 +161,7 @@ export const DATA = {
       href: "https://badgr.com/backpack/badges/64c0fbf40908012c3cb8af31",
       logoUrl: "/assets/postman.png",
       start: "2023",
-      end: "present"
+      end: "present",
     },
     {
       title: "Google Developer Student Club",
