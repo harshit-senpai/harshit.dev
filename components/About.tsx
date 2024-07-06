@@ -45,7 +45,7 @@ const About = () => {
         />
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 6}>
-        <div className="hidden sm:block gap-4 w-full rounded-md h-[40vh]">
+        <div className="hidden sm:block gap-4 w-full rounded-md">
           <Image
             src="/assets/profile.jpg"
             alt="me"
@@ -54,7 +54,7 @@ const About = () => {
             className="rounded-md"
           />
         </div>
-        <div className="block sm:hidden w-full rounded-md h-[40vh] ">
+        <div className="block sm:hidden w-full rounded-md ">
           <Image
             src="/assets/profile.jpg"
             alt="me"
