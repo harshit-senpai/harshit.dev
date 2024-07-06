@@ -11,7 +11,7 @@ const BLUR_FADE_DELAY = 0.5;
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="mb-3">
       <div className="mx-auto w-full max-w-2xl space-y-4">
         <div className="gap-2 flex justify-between">
           <div className="flex-col flex flex-1 space-y-1.5">
