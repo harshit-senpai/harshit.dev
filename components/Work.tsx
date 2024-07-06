@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.3;
 
 const Work = () => {
   return (
-    <section id="work">
+    <section id="work" className="pb-12">
       <div className="flex min-h-0 flex-col gap-y-3">
         <BlurFade delay={BLUR_FADE_DELAY}>
           <h2 className="text-xl font-bold">Work Experience</h2>
@@ -22,6 +22,7 @@ const Work = () => {
               href={work.href}
               period={`${work.start} - ${work.end ?? "Present"}`}
               description={work.description}
+              type={'Work'}
             />
           </BlurFade>
         ))}

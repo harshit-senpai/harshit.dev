@@ -14,6 +14,7 @@ interface WorkCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  type: String;
 }
 
 export const WorkCard = ({
@@ -24,6 +25,7 @@ export const WorkCard = ({
   href,
   period,
   description,
+  type
 }: WorkCardProps) => {
   return (
     <Link href={href || "#"} className="block cursor-pointer">
@@ -37,7 +39,9 @@ export const WorkCard = ({
             />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
-          <Separator orientation="vertical" className="absolute left-5" />
+          {type === "Work" && (
+            <Separator orientation="vertical" className="absolute left-5" />
+          )}
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>

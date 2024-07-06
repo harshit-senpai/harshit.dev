@@ -141,4 +141,30 @@ export const DATA = {
         "Worked as FullStack web developer intern working on freelance projects of the company, making the frontend UIs and integrating APIs into the fullstack applications",
     },
   ],
+  other: [
+    {
+      title: "Postman",
+      subtitle: "Postman Student Leader",
+      href: "https://badgr.com/backpack/badges/64c0fbf40908012c3cb8af31",
+      logoUrl: "/assets/postman.png",
+      start: "2023",
+      end: "present"
+    },
+    {
+      title: "Google Developer Student Club",
+      subtitle: "PR Lead",
+      href: "https://www.linkedin.com/posts/gdsc-rcet_celebrating-our-stars-gdsc-team-member-activity-7100905868849786880-O3z8?utm_source=share&utm_medium=member_desktop",
+      logoUrl: "/assets/gdsc.jpeg",
+      start: "2023",
+      end: "2024",
+    },
+    {
+      title: "Buildspace",
+      subtitle: "s5",
+      href: "https://www.buildspace.so",
+      logoUrl: "/assets/buildspace.jpg",
+      start: "2024",
+      end: "2024",
+    },
+  ],
 };
