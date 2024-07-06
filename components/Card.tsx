@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -25,8 +24,8 @@ interface CardProps {
   link?: string;
   image?: string;
   video?: string;
-  website: Url;
-  github: Url;
+  website: any;
+  github: any;
   className?: string;
 }
 
@@ -85,7 +84,7 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2">
+      <CardFooter className="px-2 mt-2 pb-3">
         <div className="flex flex-row flex-wrap items-start gap-1">
           <Link href={website} target="_blank">
             <Badge className="flex gap-2 px-1 py-1 rounded-md text-[10px]">

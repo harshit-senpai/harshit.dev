@@ -117,4 +117,28 @@ export const DATA = {
       image: "/assets/devoverflow.png",
     },
   ],
+  work: [
+    {
+      company: "Swaroop.ai",
+      href: "https://swaroop.ai/",
+      location: "Remote",
+      title: "FullStack Web Developer Intern",
+      logoUrl: "/assets/swaroop.png",
+      start: "May 2024",
+      end: "July 2024",
+      description:
+        "Worked as FullStack web developer intern making the dashboard of the company for a face swapping tool, and depeface detection tool, implemented credits system for the Users, and built the Landing page of the company",
+    },
+    {
+      company: "Rungta Tech",
+      href: "https://rungtatech.com",
+      location: "Bhilai, Chhattisgarh",
+      title: "Fullstack web developer intern",
+      logoUrl: "/assets/rungta.jpeg",
+      start: "Nov 2022",
+      end: "Mar 2023",
+      description:
+        "Worked as FullStack web developer intern working on freelance projects of the company, making the frontend UIs and integrating APIs into the fullstack applications",
+    },
+  ],
 };
