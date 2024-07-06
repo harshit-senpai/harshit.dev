@@ -28,7 +28,7 @@ export const DATA = {
         url: "https://www.linkedin.com/in/harshit-senpai",
       },
       X: {
-        url: "https://www.x.com/harhsit-senpai",
+        url: "https://www.x.com/Harshit_senpai",
       },
     },
   },
