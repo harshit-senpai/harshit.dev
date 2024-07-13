@@ -1,16 +1,31 @@
+"use client";
+
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/data";
 
-import { Github, LinkedinIcon, MapPin, Twitter } from "lucide-react";
+import { Check, Github, LinkedinIcon, MapPin, Twitter } from "lucide-react";
 import { Share } from "lucide-react";
 import { Copy } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 const BLUR_FADE_DELAY = 0.5;
 
 const Hero = () => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyHandler = () => {
+    if (isCopied) return;
+    navigator.clipboard.writeText("miharshit2@gmail.com");
+
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1000);
+  };
+
   return (
     <section id="hero" className="mb-3">
       <div className="mx-auto w-full max-w-2xl space-y-4">
@@ -55,8 +70,15 @@ const Hero = () => {
                 miharshit2@gmail.com
               </p>
             </div>
-            <div className="w-1/5 flex items-center justify-center dark:text-black h-10 dark:bg-white bg-zinc-900 text-white rounded-md">
-              <Copy className="h-5 w-5" />
+            <div
+              className="w-1/5 flex items-center justify-center dark:text-black h-10 dark:bg-white bg-zinc-900 text-white rounded-md cursor-pointer"
+              onClick={copyHandler}
+            >
+              {isCopied ? (
+                <Check className="h-5 w-5" />
+              ) : (
+                <Copy className="h-5 w-5" />
+              )}
             </div>
           </div>
         </BlurFade>
