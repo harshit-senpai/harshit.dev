@@ -5,8 +5,14 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/data";
 
-import { Check, Github, LinkedinIcon, MapPin, Twitter } from "lucide-react";
-import { Share } from "lucide-react";
+import {
+  Check,
+  Download,
+  Github,
+  LinkedinIcon,
+  MapPin,
+  Twitter,
+} from "lucide-react";
 import { Copy } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -62,9 +68,13 @@ const Hero = () => {
         </div>
         <BlurFade delay={BLUR_FADE_DELAY} className="mt-2">
           <div className="flex items-center max-w-sm justify-between gap-2">
-            <div className="w-1/5 flex items-center justify-center dark:text-black h-10 dark:bg-white bg-zinc-900 text-white rounded-md">
-              <Share className="h-5 w-5" />
-            </div>
+            <Link
+              href="https://drive.google.com/file/d/15OnRwbCXgUxWI_-igsv8Vjdkhcp7527b/view?usp=sharing"
+              className="cursor-pointer w-1/5 flex items-center justify-center dark:text-black h-10 dark:bg-white bg-zinc-900 text-white rounded-md"
+              target="_blank"
+            >
+              <Download className="h-5 w-5" />
+            </Link>
             <div className="w-4/5 flex items-center px-3 justify-center dark:text-black h-10 dark:bg-white bg-zinc-900 rounded-md">
               <p className="text-sm font-semibold dark:text-black text-gray-200">
                 miharshit2@gmail.com
@@ -87,18 +97,21 @@ const Hero = () => {
             <Link
               href="https://linkedin.com/in/harshit-senpai"
               className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2"
+              target="_blank"
             >
               <LinkedinIcon className="w-5 h-5" />
             </Link>
             <Link
               href="https://github.com/harshit-senpai"
               className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2"
+              target="_blank"
             >
               <Github className="w-5 h-5" />
             </Link>
             <Link
               href="https://x.com/Harshit_senpai"
               className="h-10 w-10 border-[2px] flex items-center justify-center rounded-md border-primary p-2"
+              target="_blank"
             >
               <Twitter className="w-5 h-5" />
             </Link>
